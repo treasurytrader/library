@@ -1,0 +1,28 @@
+
+//--- sampleFunc.yfu
+
+input : Condition(TrueFalse), O_Value(NumericRef), H_Value(NumericRef),​ L_Value(NumericRef), C_Value(NumericRef)​​;
+
+if Condition == True then  {
+
+   O_Value = Open;
+   H_Value = High;
+   L_Value = Low;
+   C_Value = Close;​
+
+   sampleFunc = 1;
+}
+else
+   sampleFunc = -1;
+
+/*
+sampleIndex.yin (지표식)
+
+var1 = sampleFunc(condition1, value1, value2, value3, value4);
+
+if var1 == 1 then {
+
+   plot1(value1);
+   plot2(value2);
+   ...
+*/
