@@ -1,6 +1,6 @@
 
-input: period(89);
-var  : length((period+1.0)*0.5), vfactor(0.382), EP(1.0 + vfactor), GD(0), X1(0), X2(0);
+input: period(100);
+var  : length((period+1.0)*0.5), vfactor(0.618), EP(1.0 + vfactor), GD(0), X1(0), X2(0);
 
 X1 = ema(close, length) * EP;
 X2 = ema(ema(close, length), length) * vfactor;
