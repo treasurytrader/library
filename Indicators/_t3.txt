@@ -1,8 +1,8 @@
 
 // _T3 faster (Fulks/Matulich)
 
-input: period(89);
+input: period(100);
 
-value1=_t3(close, period, 0.382);
+value1=_t3(close, period, 0.618);
 
 plot1(value1, "t3", rgb(65, 105, 225));
